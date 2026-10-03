@@ -1,0 +1,10 @@
+Script started on 2026-10-03 00:45:37+00:00 [COMMAND="python chat.py" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="259" LINES="29"]
+Connected to harness support_chatbot (session 3407bf9e-5d43-4ec5-8705-9f2bd87735ba-support-chat).
+Type a message, or 'quit' to exit.
+
+you> Can you write me a cover letter?
+bot> I'm here to help with technical problems and questions about orders, shipping, returns, and payments. For other requests like writing a cover letter, please call our human support team at 1-800-555-0199. They'll be happy to assist you.
+
+you> quit
+
+Script done on 2026-10-03 00:46:03+00:00 [COMMAND_EXIT_CODE="0"]
