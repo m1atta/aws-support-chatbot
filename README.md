@@ -61,6 +61,18 @@ The same ticket in the `bug-report-tool-stack-bug-reports` DynamoDB table:
 | Question the FAQ does not cover | [`transcripts/faq_uncovered.txt`](transcripts/faq_uncovered.txt) | No guess; hand-off to the support phone line |
 | Out-of-scope request | [`transcripts/out_of_scope.txt`](transcripts/out_of_scope.txt) | Polite hand-off to the support phone line |
 
+**Covered question** (answered from the FAQ):
+
+![Covered question chat](screenshots/08_faq_covered_chat.png)
+
+**Uncovered question** (hand-off instead of a guess):
+
+![Uncovered question chat](screenshots/09_faq_uncovered_chat.png)
+
+**Out-of-scope request** (polite hand-off):
+
+![Out-of-scope chat](screenshots/10_out_of_scope_chat.png)
+
 ## Testing and evaluation
 
 `generate-eval-dataset.py` ran all 13 tests against the harness and produced `output_eval_dataset.jsonl` with 13 successful calls and no `[HARNESS_ERROR]` entries. The file was uploaded to S3 and judged by a Bedrock Evaluations job using `Builtin.Correctness` with Amazon Nova Pro as the LLM judge.
